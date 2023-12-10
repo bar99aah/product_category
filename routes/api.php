@@ -31,7 +31,7 @@ Route::prefix('product')->middleware('auth:sanctum')->group(function () {
   Route::get('/{id}/tags', [ProductControllerApi::class, 'tags']);
   Route::post('/add-tags', [ProductControllerApi::class, 'addTags']);
 });
-// Route::resource('category', CategoryControllerApi::class);
+Route::resource('category', CategoryControllerApi::class);
 
 // my update for api
 Route::prefix('category')->group(function () {
