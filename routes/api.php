@@ -33,6 +33,7 @@ Route::prefix('product')->middleware('auth:sanctum')->group(function () {
 });
 // Route::resource('category', CategoryControllerApi::class);
 
+// my update for api
 Route::prefix('category')->group(function () {
   Route::post('/store', [CategoryControllerApi::class, 'store']);
   Route::get('/index', [CategoryControllerApi::class, 'index']);

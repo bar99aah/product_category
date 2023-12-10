@@ -15,6 +15,8 @@ class CategoryControllerApi extends Controller
     /**
      * Display a listing of the resource.
      */
+    // my update for api
+    
     public function index()
     {
         $category = Category::all();
